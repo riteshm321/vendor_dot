@@ -42,8 +42,9 @@ SOONG_CONFIG_dotGlobalVars += \
     target_process_sdk_version_override \
     target_surfaceflinger_udfps_lib \
     disable_postrender_cleanup \
-    uses_camera_parameter_lib
-
+    uses_camera_parameter_lib \
+    uses_egl_display_array
+    
 SOONG_CONFIG_NAMESPACES += dotNvidiaVars
 SOONG_CONFIG_dotNvidiaVars += \
     uses_nv_enhancements
@@ -72,6 +73,7 @@ SOONG_CONFIG_dotGlobalVars_has_memfd_backport := $(TARGET_HAS_MEMFD_BACKPORT)
 SOONG_CONFIG_dotGlobalVars_ignores_ftp_pptp_conntrack_failure := $(TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE)
 SOONG_CONFIG_dotGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE)
 SOONG_CONFIG_dotGlobalVars_disable_postrender_cleanup := $(TARGET_DISABLE_POSTRENDER_CLEANUP)
+SOONG_CONFIG_dotGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_dotNvidiaVars_uses_nv_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_dotQcomVars_legacy_hw_disk_encryption := $(TARGET_LEGACY_HW_DISK_ENCRYPTION)
 SOONG_CONFIG_dotQcomVars_should_wait_for_qsee := $(TARGET_KEYMASTER_WAIT_FOR_QSEE)
